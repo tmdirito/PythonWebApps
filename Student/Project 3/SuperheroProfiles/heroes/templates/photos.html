@@ -1,0 +1,19 @@
+{% extends 'theme.html' %}
+
+
+
+{% block content %}
+<h2 style="text-align: center;"">Click on any image to view details!</h2>
+<div class="photo-container">
+ 
+{% for photo in photos %}
+
+    {% with superhero_name=photo.name|slice:":-4" %}
+    <a href="{% url 'hero_detail' name=superhero_name %}">
+    <img src="{{ photo }}" alt="{{ superhero_name }}" width="200">
+    </a>
+    {% endwith %}
+
+{% endfor %}
+</div>
+{% endblock content %}
