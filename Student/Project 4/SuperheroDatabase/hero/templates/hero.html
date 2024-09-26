@@ -1,0 +1,15 @@
+{% extends 'theme.html' %}
+
+
+
+{% block content %}
+
+<h1>{{ superhero.name }}</h1>
+<p>{{ superhero.description }}</p>
+
+
+<img src="{{ superhero.image }}" alt="{{ superhero.image }}" width="300">
+
+<a href="{% url 'main-view' %}"">Home</a>
+
+{% endblock content %}
