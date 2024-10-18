@@ -1,4 +1,7 @@
 envs:
+- key: DEBUG
+  scope: RUN_AND_BUILD_TIME
+  value: "True"
 - key: DISABLE_COLLECTSTATIC
   scope: RUN_AND_BUILD_TIME
   value: "1"
@@ -16,7 +19,7 @@ services:
   name: webapps-demo-django
   routes:
   - path: /
-  run_command: 
+  run_command: |
     python manage.py migrate --no-input
     gunicorn --worker-tmp-dir /dev/shm config.wsgi
   source_dir: Student/Project 4/SuperheroDatabase
