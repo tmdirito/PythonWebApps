@@ -9,7 +9,7 @@ services:
   github:
     branch: main
     deploy_on_push: true
-    repo: ElfazM/PythonWebApps
+    repo: tmdirito/PythonWebApps
   http_port: 8080
   instance_count: 1
   instance_size_slug: basic-xxs
@@ -17,14 +17,14 @@ services:
   routes:
   - path: /
   run_command: gunicorn --worker-tmp-dir /dev/shm config.wsgi
-  source_dir: 04/Superhero
+  source_dir: /Student/Project 4/SuperheroDatabase
 static_sites:
 - environment_slug: html
   github:
     branch: main
     deploy_on_push: true
-    repo: ElfazM/PythonWebApps
+    repo: tmdirito/PythonWebApps
   name: myapp-static
   routes:
   - path: /static
-  source_dir: 04/Superhero/static
+  source_dir: /Student/Project 4/SuperheroDatabase/static
