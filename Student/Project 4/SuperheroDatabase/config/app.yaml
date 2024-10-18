@@ -2,7 +2,7 @@ envs:
 - key: DISABLE_COLLECTSTATIC
   scope: RUN_AND_BUILD_TIME
   value: "1"
-name: squid-app
+name: webapps-demo
 region: nyc
 services:
 - environment_slug: python
@@ -13,7 +13,7 @@ services:
   http_port: 8080
   instance_count: 1
   instance_size_slug: basic-xxs
-  name: my-app-service
+  name: webapps-demo-django
   routes:
   - path: /
   run_command: gunicorn --worker-tmp-dir /dev/shm config.wsgi
@@ -24,7 +24,7 @@ static_sites:
     branch: main
     deploy_on_push: true
     repo: tmdirito/PythonWebApps
-  name: myapp-static
+  name: webapps-demo-static
   routes:
   - path: /static
   source_dir: Student/Project 4/SuperheroDatabase/static
