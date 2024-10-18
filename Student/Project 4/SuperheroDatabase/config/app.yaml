@@ -13,7 +13,7 @@ services:
   http_port: 8080
   instance_count: 1
   instance_size_slug: basic-xxs
-  name: myapp
+  name: my-app-service
   routes:
   - path: /
   run_command: gunicorn --worker-tmp-dir /dev/shm config.wsgi
