@@ -1,7 +1,12 @@
 {% extends 'theme.html' %}
 
+{% block navbar %}
+
+{% endblock navbar %}
+
+
 {% block title %}
-Edit Blog
+Add New Hero
 {% endblock title %}
 
 
@@ -9,12 +14,12 @@ Edit Blog
 
 <div class="container m-5">
 
-     {% load crispy_forms_tags %}  
+    {% load crispy_forms_tags %}
 
 
     <form action="" method="post">{% csrf_token %}
 
-        {{ form|crispy }} 
+        {{ form|crispy }}
 
         <button class="btn btn-success m-5" type="submit">Save Record</button>
         <a class="btn btn-success m-5" href="delete">Delete Record</a>

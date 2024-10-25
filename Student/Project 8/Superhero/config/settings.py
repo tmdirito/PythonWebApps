@@ -20,30 +20,28 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-gz3--%u0d^k+-+8gq!=t!y8by980r36cav-cwc2o)1o3pbv=vo'
+SECRET_KEY = 'django-insecure--bbs68lvsrx1n2n^s!)0wb7(yd4tkio&u4do46r&v741=-lunk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.ondigitalocean.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    # Django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     # Third-party
     'crispy_forms',
-
+    'crispy_bootstrap5',
     # My apps
-    'blog',
+    'hero',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'blog.urls'
+ROOT_URLCONF = 'hero.urls'
 
 TEMPLATES = [
     {
@@ -123,9 +121,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-
-
+STATICFILES_DIRS = [BASE_DIR / "static"]
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = '/'
+
+LOGOUT_REDIRECT_URL = '/'
