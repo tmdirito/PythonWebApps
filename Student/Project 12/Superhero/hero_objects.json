@@ -1,0 +1,65 @@
+[
+    {
+        "id": 8,
+        "name": "Iron Man",
+        "identity": "Tony Stark",
+        "description": "Genius and expert in engineering.",
+        "image": "static/images/ironman.jpg",
+        "strengths": "Genius, rich, Iron man suit",
+        "weaknesses": "Arrogant, no real superpowers"
+    },
+    {
+        "id": 9,
+        "name": "Spider Man",
+        "identity": "Peter Parker",
+        "description": "Web slinging machine",
+        "image": "static/images/spiderman.jpg",
+        "strengths": "Super strength, spidey sense, web slinging",
+        "weaknesses": "Self doubting, will not kill"
+    },
+    {
+        "id": 10,
+        "name": "Thor",
+        "identity": "Thor Odinson",
+        "description": "God of thunder",
+        "image": "static/images/thor.jpg",
+        "strengths": "Mjolnir, super strength",
+        "weaknesses": "Arrogant, weaker without hammer"
+    },
+    {
+        "id": 11,
+        "name": "Black Panther",
+        "identity": "T'Challa",
+        "description": "THE Black Panther",
+        "image": "static/images/blackpanther.jpg",
+        "strengths": "Heart shaped herb, superhiman senses and reflexes, vibranium use.",
+        "weaknesses": "Not protected without vibranium, human folly."
+    },
+    {
+        "id": 12,
+        "name": "Doctor Strange",
+        "identity": "Stephen Strange",
+        "description": "Sorcerer Supreme",
+        "image": "static/images/doctorstrange.jpg",
+        "strengths": "Spells, astral projection",
+        "weaknesses": "Human weakness, needs hands and tools for spellcasting"
+    },
+    {
+        "id": 13,
+        "name": "Black Widow",
+        "identity": "Natasha Romanoff",
+        "description": "Russian spy",
+        "image": "static/images/black_widow.jpg",
+        "strengths": "Strong, martial arts",
+        "weaknesses": "Human"
+    },
+    {
+        "id": 14,
+        "name": "Me",
+        "identity": "Me",
+        "description": "It's me",
+        "image": "None",
+        "strengths": "Me",
+        "weaknesses": "Me"
+    }
+]
