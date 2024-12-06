@@ -1,0 +1,11 @@
+<table>
+    {% for row in table %}
+    <tr>
+        {% for column in row %}
+        <td>
+            {{ column }}
+        </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>

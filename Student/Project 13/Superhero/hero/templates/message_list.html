@@ -1,0 +1,11 @@
+<h2>Message Board</h2>
+<ul>
+  {% for message in messages %}
+    <li>
+      <strong>{{ message.user.username }}:</strong> {{ message.content }} 
+      <small>(Posted on {{ message.created_at }})</small>
+    </li>
+  {% endfor %}
+</ul>
+
+<a href="{% url 'create_message' %}">Post a New Message</a> 
